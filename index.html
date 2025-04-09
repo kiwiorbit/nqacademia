@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurul Qamar Institute for Girls</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-glass fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold">
+                    <span class="gradient-text">NQ</span><span class="ly">Academia</span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-semibold text-sm">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-semibold text-sm">About Us</a>
+                <a href="news.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-semibold text-sm">News</a>
+                <a href="#join" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-semibold text-sm">Join Us</a>
+                <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold text-sm py-1.5 px-4 rounded-full transition-all duration-300 hover:scale-105 transform flex items-center justify-center">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden glass w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-semibold text-sm">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-semibold text-sm">About Us</a>
+                <a href="news.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-semibold text-sm">News</a>
+                <a href="#join" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-semibold text-sm">Join Us</a>
+                <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold text-sm py-1.5 px-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md inline-flex items-center justify-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-28 pb-20 section-dark">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                    "The best among you are those who<span class="gradient-text">learn the Qur'an and teach it"</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    <span class="gradient-text"> - Prophet Muhammad (PeaceBeUponHim)</span><br><br>
+                    Learn and teach Quranic Arabic Tajweed with expert guidance, flexible online classes, and a global sisterhood, exclusively for women by Nurul Qamar Institute for Girls.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#join" class="btn-primary hero-btn py-3 px-6 rounded-lg text-center glow-border text-white">
+                        Join Our Classes
+                    </a>
+                    <a href="#about" class="text-indigo-600 font-semibold py-3 px-6 rounded-lg border border-indigo-400 transition duration-300 text-center glow-hover-btn bg-white bg-opacity-80">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="relative md:w-10/12 lg:w-9/12 xl:w-8/12 ml-0 md:ml-auto mr-0">
+                    <div class="absolute -inset-2.5 bg-gradient-to-r from-indigo-500 to-emerald-500 rounded-lg blur opacity-20"></div>
+                    <img src="./images/future school.jpeg" alt="Muslim women learning Tajweed" class="relative rounded-lg glass float w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 section-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Our Growing Community</h2>
+            <div class="decorative-line mb-8"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-lg text-center hover-card glow-border">
+                    <div class="counter mb-2 text-indigo-600 font-bold" data-target="41">0</div>
+                    <p class="text-gray-600 text-lg">Students Enrolled</p>
+                </div>
+                <div class="glass-card p-8 rounded-lg text-center hover-card glow-border">
+                    <div class="counter mb-2 text-indigo-600 font-bold" data-target="5">0</div>
+                    <p class="text-gray-600 text-lg">Graduates</p>
+                </div>
+                <div class="glass-card p-8 rounded-lg text-center hover-card glow-border">
+                    <div class="counter mb-2 text-indigo-600 font-bold" data-target="11">0</div>
+                    <p class="text-gray-600 text-lg">Currently Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details Section -->
+    <section class="py-16 section-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Our Comprehensive Tajweed Course</h2>
+            <div class="decorative-line mb-8"></div>
+
+            <div class="glass-card p-8 rounded-lg mb-10">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Course Overview</h3>
+                <p class="text-gray-600 mb-6">Our Tajweed course is designed specifically for Muslim women who want to perfect their Quranic recitation. With expert female instructors and a supportive community, you'll master the rules of Tajweed in a comfortable, women-only environment.</p>
+
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Course Structure</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="glass p-4 rounded-lg transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-indigo-500 group">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-calendar-alt text-xl"></i>
+                                </div>
+                                <span class="text-gray-700 text-lg font-medium">12-week comprehensive program</span>
+                            </div>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-purple-500 group">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-video text-xl"></i>
+                                </div>
+                                <span class="text-gray-700 text-lg font-medium">Weekly live online sessions (2 hours each)</span>
+                            </div>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-amber-500 group">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-users text-xl"></i>
+                                </div>
+                                <span class="text-gray-700 text-lg font-medium">Small group classes (maximum 10 students)</span>
+                            </div>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-blue-500 group">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-600 flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-comments text-xl"></i>
+                                </div>
+                                <span class="text-gray-700 text-lg font-medium">One-on-one feedback sessions</span>
+                            </div>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-rose-500 group">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-rose-500 to-pink-600 flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-play-circle text-xl"></i>
+                                </div>
+                                <span class="text-gray-700 text-lg font-medium">Access to recorded lessons</span>
+                            </div>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg transform hover:scale-105 transition-all duration-300 border border-transparent hover:border-green-500 group">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center text-white mr-4">
+                                    <i class="fab fa-whatsapp text-xl"></i>
+                                </div>
+                                <span class="text-gray-700 text-lg font-medium">Private WhatsApp group for support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-lg h-full overflow-hidden relative">
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-indigo-500 opacity-10 rounded-full"></div>
+                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-500 opacity-10 rounded-full"></div>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 relative">What You Will Learn</h3>
+                    <div class="space-y-5 relative">
+                        <div class="glass p-4 rounded-lg border-l-4 border-indigo-500 transform hover:translate-x-2 transition-all duration-300">
+                            <p class="text-gray-700 text-lg">Correct pronunciation of all Arabic letters <span class="text-pink-400 italic font-semibold">(Makharij Al-Huroof)</span></p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg border-l-4 border-indigo-500 transform hover:translate-x-2 transition-all duration-300">
+                            <p class="text-gray-700 text-lg">Rules of Noon Saakin and Tanween <span class="text-blue-400 italic font-semibold">(Izhaar, Idghaam, Iqlaab, Ikhfaa)</span></p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg border-l-4 border-indigo-500 transform hover:translate-x-2 transition-all duration-300">
+                            <p class="text-gray-700 text-lg">Rules of Meem Saakin <span class="text-purple-400 italic font-semibold">(Ikhfaa Shafawi, Idghaam Shafawi, Izhaar Shafawi)</span></p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg border-l-4 border-indigo-500 transform hover:translate-x-2 transition-all duration-300">
+                            <p class="text-gray-700 text-lg">Different types of Madd (elongation) and their proper duration</p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg border-l-4 border-indigo-500 transform hover:translate-x-2 transition-all duration-300">
+                            <p class="text-gray-700 text-lg">Rules of stopping <span class="text-green-400 italic font-semibold">(Waqf)</span> and starting <span class="text-teal-400 italic font-semibold">(Ibtidaa)</span></p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg border-l-4 border-indigo-500 transform hover:translate-x-2 transition-all duration-300">
+                            <p class="text-gray-700 text-lg">Special letters and their unique characteristics <span class="text-amber-400 italic font-semibold">(Sifaat Al-Huroof)</span></p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg border-l-4 border-indigo-500 transform hover:translate-x-2 transition-all duration-300">
+                            <p class="text-gray-700 text-lg">Common mistakes in recitation and how to avoid them</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-lg h-full overflow-hidden relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-purple-500 opacity-10 rounded-full"></div>
+                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-indigo-500 opacity-10 rounded-full"></div>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 relative">By the End of This Course</h3>
+
+                    <div class="grid grid-cols-1 gap-4 relative">
+                        <div class="glass p-4 rounded-lg flex items-center transform hover:scale-102 transition-all duration-300 border-r-4 border-indigo-500 group">
+                            <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-quran text-lg"></i>
+                            </div>
+                            <p class="text-gray-700 text-lg">You will be able to recite the Quran with proper Tajweed rules</p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg flex items-center transform hover:scale-102 transition-all duration-300 border-r-4 border-indigo-500 group">
+                            <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-edit text-lg"></i>
+                            </div>
+                            <p class="text-gray-700 text-lg">You will recognize and correct mistakes in your own recitation</p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg flex items-center transform hover:scale-102 transition-all duration-300 border-r-4 border-indigo-500 group">
+                            <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-brain text-lg"></i>
+                            </div>
+                            <p class="text-gray-700 text-lg">You will understand the reasoning behind each Tajweed rule</p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg flex items-center transform hover:scale-102 transition-all duration-300 border-r-4 border-indigo-500 group">
+                            <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-book text-lg"></i>
+                            </div>
+                            <p class="text-gray-700 text-lg">You will have memorized selected surahs with perfect pronunciation</p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg flex items-center transform hover:scale-102 transition-all duration-300 border-r-4 border-indigo-500 group">
+                            <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-award text-lg"></i>
+                            </div>
+                            <p class="text-gray-700 text-lg">You will receive a certificate of completion</p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg flex items-center transform hover:scale-102 transition-all duration-300 border-r-4 border-indigo-500 group">
+                            <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-users text-lg"></i>
+                            </div>
+                            <p class="text-gray-700 text-lg">You will join our community of graduates with ongoing support</p>
+                        </div>
+
+                        <div class="glass p-4 rounded-lg flex items-center transform hover:scale-102 transition-all duration-300 border-r-4 border-indigo-500 group">
+                            <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-chalkboard-teacher text-lg"></i>
+                            </div>
+                            <p class="text-gray-700 text-lg">You will have the confidence to teach basic Tajweed to others</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex justify-center items-center">
+                <a href="#contact" class="btn-primary py-4 px-10 rounded-lg inline-block glow-hover-btn text-xl font-medium mx-auto text-white enroll-btn">
+                    <i class="fas fa-graduation-cap mr-2"></i>Enroll Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Sessions Section -->
+    <section id="join" class="py-16 bg-gray-900 relative overflow-hidden">
+        <!-- Decorative elements for modern look -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+            <div class="absolute top-0 left-0 w-1/3 h-1/3 bg-indigo-500 rounded-full filter blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-1/3 h-1/3 bg-purple-500 rounded-full filter blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
+            <div class="absolute top-1/2 left-1/2 w-1/4 h-1/4 bg-pink-500 rounded-full filter blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">Upcoming Live Sessions</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto mb-4 rounded-full"></div>
+            <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">Join our interactive online classes led by qualified female instructors who are experts in Tajweed.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Session 1 -->
+                <div class="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden hover-card border border-gray-700 shadow-2xl transform transition-all duration-300 hover:scale-[1.02] hover:shadow-indigo-500/20">
+                    <div class="bg-gradient-to-r from-indigo-800 to-indigo-0 text-white p-4">
+                        <h3 class="font-bold text-xl">Beginner Tajweed</h3>
+                        <p class="text-indigo-100">Sundays, 10:00 AM - 11:30 AM</p>
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-10 -right-10 w-20 h-20 bg-indigo-500 opacity-10 rounded-full"></div>
+                        <p class="text-gray-300 mb-4 relative">Perfect for those just starting their Tajweed journey. Learn the basic rules and pronunciation.</p>
+                        <div class="flex items-center mb-4 relative">
+                            <div class="w-10 h-10 rounded-full mr-3 bg-indigo-500 flex items-center justify-center text-white font-bold">A</div>
+                            <div>
+                                <p class="font-semibold text-white">Ustadha Aisha</p>
+                                <p class="text-sm text-gray-400">10+ years experience</p>
+                            </div>
+                        </div>
+                        <a href="#contact" class="block text-center bg-indigo-600  text-white font-semibold py-2 px-4 rounded transition-all duration-300">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Session 2 -->
+                <div class="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden hover-card border border-gray-700 shadow-2xl transform transition-all duration-300 hover:scale-[1.02] hover:shadow-amber-500/20">
+                    <div class="bg-gradient-to-r from-amber-800 to-amber-0 text-white p-4">
+                        <h3 class="font-bold text-xl">Intermediate Tajweed</h3>
+                        <p class="text-amber-100">Wednesdays, 6:00 PM - 7:30 PM</p>
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-10 -right-10 w-20 h-20 bg-amber-500 opacity-10 rounded-full"></div>
+                        <p class="text-gray-300 mb-4 relative">Deepen your understanding of Tajweed rules and improve your recitation with practical exercises.</p>
+                        <div class="flex items-center mb-4 relative">
+                            <div class="w-10 h-10 rounded-full mr-3 bg-amber-500 flex items-center justify-center text-white font-bold">F</div>
+                            <div>
+                                <p class="font-semibold text-white">Ustadha Fatima</p>
+                                <p class="text-sm text-gray-400">8+ years experience</p>
+                            </div>
+                        </div>
+                        <a href="#contact" class="block text-center bg-amber-600 text-white font-semibold py-2 px-4 rounded">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Session 3 -->
+                <div class="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden hover-card border border-gray-700 shadow-2xl transform transition-all duration-300 hover:scale-[1.02] hover:shadow-emerald-500/20">
+                    <div class="bg-gradient-to-r from-emerald-900 to-emerald-0 text-white p-4">
+                        <h3 class="font-bold text-xl">Advanced Tajweed</h3>
+                        <p class="text-emerald-100">Saturdays, 2:00 PM - 3:30 PM</p>
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-10 -right-10 w-20 h-20 bg-emerald-500 opacity-10 rounded-full"></div>
+                        <p class="text-gray-300 mb-4 relative">Master complex Tajweed rules and perfect your Quranic recitation with detailed feedback.</p>
+                        <div class="flex items-center mb-4 relative">
+                            <div class="w-10 h-10 rounded-full mr-3 bg-emerald-500 flex items-center justify-center text-white font-bold">K</div>
+                            <div>
+                                <p class="font-semibold text-white">Ustadha Khadija</p>
+                                <p class="text-sm text-gray-400">15+ years experience</p>
+                            </div>
+                        </div>
+                        <a href="#contact" class="block text-center bg-emerald-600 text-white font-semibold py-2 px-4 rounded ">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex justify-center">
+                <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-600  text-white font-medium py-3 px-8 rounded-lg">
+                    <span class="flex items-center">
+                        <span class="mr-2 "><i class="fas fa-calendar-alt"></i></span>
+                        View All Sessions
+                        <span class="ml-2 transform group-hover:translate-x-1 transition-transform duration-300"><i class="fas fa-arrow-right"></i></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 section-light">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="relative relative md:w-10/12 lg:w-9/12 xl:w-8/12 ml-0 mx-auto">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-lg blur opacity-30"></div>
+                        <img src="./images/Designer (24).jpeg" alt="Our mission" class="relative rounded-lg glass float">
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+                    <div class="decorative-line mb-6"></div>
+                    <p class="text-gray-600 mb-4">
+                        We are dedicated to providing free, high-quality Tajweed education to Muslim women worldwide. Our mission is to empower women to connect with the Quran through proper recitation.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Founded in 2020, our community has grown to include hundreds of students from over 50 countries, all learning in a supportive, women-only environment.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="glass-card p-4 rounded-lg glow-border">
+                            <h3 class="font-semibold gradient-text mb-2">Our Vision</h3>
+                            <p class="text-gray-600 text-sm">To create a global community of Muslim women proficient in Quranic recitation.</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-lg glow-border">
+                            <h3 class="font-semibold gradient-text-secondary mb-2">Our Values</h3>
+                            <p class="text-gray-600 text-sm">Inclusivity, excellence, sisterhood, and dedication to authentic knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">Join Our Community</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto mb-4 rounded-full"></div>
+            <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">Register for our free Tajweed classes and become part of our global community of learners.</p>
+
+            <div class="max-w-3xl mx-auto bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg p-8 rounded-lg border border-gray-700 shadow-2xl relative overflow-hidden">
+                <!-- Decorative elements for modern look -->
+                <div class="absolute -top-20 -right-20 w-40 h-40 bg-indigo-500 opacity-10 rounded-full"></div>
+                <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-purple-500 opacity-10 rounded-full"></div>
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-purple-600"></div>
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first-name" class="block text-gray-300 mb-2 text-sm font-medium">First Name</label>
+                            <input type="text" id="first-name" name="first-name" class="w-full px-4 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-400 transition duration-300" required>
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-gray-300 mb-2 text-sm font-medium">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" class="w-full px-4 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-400 transition duration-300" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-gray-300 mb-2 text-sm font-medium">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-400 transition duration-300" required>
+                    </div>
+
+                    <div>
+                        <label for="phone" class="block text-gray-300 mb-2 text-sm font-medium">WhatsApp Number (with country code)</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-400 transition duration-300" required>
+                    </div>
+
+                    <div>
+                        <label for="level" class="block text-gray-300 mb-2 text-sm font-medium">Tajweed Level</label>
+                        <select id="level" name="level" class="w-full px-4 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white transition duration-300" required>
+                            <option value="" class="bg-gray-800">Select your level</option>
+                            <option value="beginner" class="bg-gray-800">Beginner</option>
+                            <option value="intermediate" class="bg-gray-800">Intermediate</option>
+                            <option value="advanced" class="bg-gray-800">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-gray-300 mb-2 text-sm font-medium">Additional Information</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-400 transition duration-300" placeholder="Tell us about your Tajweed learning goals..."></textarea>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input type="checkbox" id="agree" name="agree" class="mr-2 h-5 w-5 text-indigo-600 rounded border-gray-600 focus:ring-indigo-500 transition duration-300" required>
+                        <label for="agree" class="text-gray-300 text-sm">I agree to join the WhatsApp group for my selected level</label>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-medium py-3 px-6 rounded-lg transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-indigo-500/50">
+                            Register Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-dark py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Mission -->
+                <div class="md:col-span-1">
+                    <a href="#" class="text-2xl font-bold mb-4 block">
+                        <span class="gradient-text">Tajweed</span><span class="text-amber-400">Learn</span>
+                    </a>
+                    <p class="text-gray-600 mb-6">Connecting Muslim women worldwide through free, accessible Tajweed education.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300 hover:scale-110 transform">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300 hover:scale-110 transform">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300 hover:scale-110 transform">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300 hover:scale-110 transform">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="md:col-span-1">
+                    <h3 class="text-lg font-semibold mb-4 gradient-text">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-900 hover:text-white transition duration-300 hover:translate-x-1 inline-block transform">Home</a></li>
+                        <li><a href="#about" class="text-gray-900 hover:text-white transition duration-300 hover:translate-x-1 inline-block transform">About Us</a></li>
+                        <li><a href="news.html" class="text-gray-900 hover:text-white transition duration-300 hover:translate-x-1 inline-block transform">News</a></li>
+                        <li><a href="#join" class="text-gray-900 hover:text-white transition duration-300 hover:translate-x-1 inline-block transform">Join Us</a></li>
+                        <li><a href="#contact" class="text-gray-900 hover:text-white transition duration-300 hover:translate-x-1 inline-block transform">Contact</a></li>
+                        <li><a href="https://quran.com" target="_blank" class="text-gray-900 hover:text-white transition duration-300 hover:translate-x-1 inline-block transform flex items-center">
+                            Quran.com
+                            <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                        </a></li>
+                        <li><a href="https://sunnah.com" target="_blank" class="text-gray-900 hover:text-white transition duration-300 hover:translate-x-1 inline-block transform flex items-center">
+                            Sunnah.com
+                            <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="md:col-span-1">
+                    <h3 class="text-lg font-semibold mb-4 gradient-text-secondary">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-indigo-400"></i>
+                            <span class="text-gray-600 hover:text-indigo-600 transition duration-300">info@tajweedlearn.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-3 text-indigo-400"></i>
+                            <span class="text-gray-600 hover:text-indigo-600 transition duration-300">+1 234 567 8900</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-indigo-400"></i>
+                            <span class="text-gray-600 hover:text-indigo-600 transition duration-300">Global Online Community</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="md:col-span-1">
+                    <h3 class="text-lg font-semibold mb-4 gradient-text">Newsletter</h3>
+                    <p class="text-gray-600 mb-4">Subscribe to receive updates on new classes and resources.</p>
+                    <form class="space-y-2">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-2 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700">
+                        <button type="submit" class="w-full btn-primary py-2 px-4 rounded-lg transition duration-300 text-white">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 mt-10 pt-6 text-center">
+                <p class="text-gray-500">&copy; 2025 TajweedLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

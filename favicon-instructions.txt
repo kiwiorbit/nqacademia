@@ -1,0 +1,24 @@
+FAVICON GENERATION INSTRUCTIONS
+
+To complete the setup of your website for GitHub Pages, you need to generate favicon files.
+
+1. Visit a favicon generator website like:
+   - https://favicon.io/
+   - https://realfavicongenerator.net/
+   - https://www.favicon-generator.org/
+
+2. Create a favicon with the letter "T" or a symbol representing Tajweed learning
+
+3. Download the generated files and place them in the root directory of your project:
+   - favicon.ico
+   - favicon-16x16.png
+   - favicon-32x32.png
+   - apple-touch-icon.png
+   - android-chrome-192x192.png
+   - android-chrome-512x512.png
+
+4. These files are referenced in your HTML and site.webmanifest files, so make sure the filenames match exactly.
+
+5. After adding these files, your website will have a proper favicon that appears in browser tabs and when bookmarked.
+
+Note: You can delete this instruction file before uploading to GitHub.
