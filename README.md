@@ -1,6 +1,8 @@
 **https://kiwiorbit.github.io/jnql-v1.0-test/
 **
 
+
+**https://kiwiorbit.github.io/nqacademia/**
 # Tajweed Learn - Arabic Tajweed Learning Platform
 
 A professional website for Muslim women to learn Arabic Tajweed for free. This platform connects women worldwide through educational resources, community discussions, and live sessions.
